@@ -21,11 +21,11 @@ const SearchHeader = ({ onSearch }) => {
   };
 
   return (
-    <header>
-      <div>
-        <h2>The Ssovies</h2>
+    <header className={styles.header}>
+      <div className={styles.nav}>
+        <h2 className={styles.logo}>The Ssovies</h2>
       </div>
-      <div>
+      <div className={styles.inputDiv}>
         <input //
           className={styles.input}
           ref={inputRef}
@@ -34,7 +34,6 @@ const SearchHeader = ({ onSearch }) => {
           placeholder='search..'
           onKeyUp={onKeyUp}
         />
-
         <button className={styles.button} type='submit' onClick={onClick}>
           <img className={styles.buttonImg} src='/images/search.png' alt='search' />
         </button>

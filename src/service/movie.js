@@ -28,9 +28,6 @@ class Movie {
 
     const result_1 = await response.json();
     return result_1.data.movies;
-    // .then(response => response.json())
-    // .then(result => setMovies(result.data.movies))
-    // .catch(error => console.log('error', error));
   }
 }
 export default Movie;

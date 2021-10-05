@@ -7,7 +7,7 @@ const MovieDetail = ({ movie }) => {
       <div className={styles.detail}>
         <img className={styles.image} src={movie.large_cover_image} alt='video img' />
         <div className={styles.metadata}>
-          <h2>{movie.title}</h2>
+          <h1>{movie.title}</h1>
           <p className={styles.subData}>
             {movie.year} | {movie.runtime}min | {movie.genres}
           </p>

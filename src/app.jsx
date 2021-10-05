@@ -27,7 +27,7 @@ function App({ movie }) {
   }, [movie]);
 
   return (
-    <div>
+    <div className={styles.app}>
       <SearchHeader onSearch={search} />
       {selectedMovie && <MovieDetail movie={selectedMovie} />}
       <MovieList movies={movies} onMovieClick={selectMovie} />

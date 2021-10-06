@@ -3,6 +3,7 @@ import styles from './app.module.css';
 import SearchHeader from './components/search_header/search_header';
 import MovieList from './components/movie_list/movie_list';
 import MovieDetail from './components/movie_detail/movie_detail';
+import DarkModeToggle from './dark-mode';
 
 function App({ movie }) {
   const [movies, setMovies] = useState([]);
@@ -29,6 +30,7 @@ function App({ movie }) {
   return (
     <div className={styles.app}>
       <SearchHeader onSearch={search} />
+      <DarkModeToggle />
       {selectedMovie && <MovieDetail movie={selectedMovie} />}
       <MovieList movies={movies} onMovieClick={selectMovie} />
     </div>

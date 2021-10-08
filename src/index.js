@@ -4,7 +4,7 @@ import './index.css';
 import App from './app';
 import reportWebVitals from './reportWebVitals';
 import Movie from './service/movie';
-
+import '@fortawesome/fontawesome-free/js/all.js';
 const movie = new Movie();
 
 ReactDOM.render(
